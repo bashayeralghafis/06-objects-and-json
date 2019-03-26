@@ -12,23 +12,29 @@
 
 // Although the following line isn't technically JSON (since it's actual JavaScript code)
 // the object that's being saved inside `notActuallyJSON` is written in valid JSON syntax.
-var notActuallyJSON = {
-  "someKey": "someValue",
-  "innerArray": [
-    "alpha",
-    "beta",
-    "gamma",
-    "delta"
-  ]
-};
+{
+	"notActuallyJSON": "",
+	"someKey": "someValue",
+	"innerArray": [
+		"alpha",
+		"beta",
+		"gamma",
+		"delta"
+	]
+}
 // [ Step 1 ] Use JSONLint to determine if something is valid JSON.
 // Copy the entire object above ({...}, but NOT 'var notActuallyJSON =' or the trailing semicolon)--just copy everything between the brackets, including the brackets themselves.
 // Then go to http://jsonlint.com/ and paste it into the validator. Does it pass the test of being valid JSON?
 
 // The following line is valid JavaScript, but the object is not written in valid JSON syntax.
 // [ Step 2 ] Use JSONLint to validate the object in the following line; then, edit the object so it passes the validator.
-var eddie = {name:"Eddie Vedder", age:49};
+//var eddie = {name:"Eddie Vedder", age:49};
+{
+	"eddie": "",
+	"name": "Eddie Vedder",
+	"age": 49
 
+}
 // We frequently want to turn a JavaScript object into a JSON string, and vice versa.
 // JavaScript has a built-in global object called `JSON` that contains a number of useful methods for manipulating JSON.
 // To turn a JS Object into JSON, use the .stringify method  ( JSON.stringify(someObject) )

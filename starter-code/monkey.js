@@ -1,4 +1,18 @@
 console.log("monkey.js loaded");
+
+
+
+
+var Superhero = function (firstName, superheroName) {
+    // Important to understand here that the object properties firstName and superheroName
+    // are set through the this keyword with the value passed through the constructor function
+    this.firstName = firstName;
+    this.superheroName = superheroName;
+    console.log('Superhero instantiated');
+  };
+
+  var superman = new Superhero('Clark', 'Superman');
+  console.log(superman.firstName + ' is ' + superman.superheroName);
 /*Work with a partner to create a monkey object, which has the following properties:
 
 * name
